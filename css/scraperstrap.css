@@ -11,6 +11,8 @@ body {
   line-height: 24px;
 }
 
-li, dd, dt {
+li, dd, dt, blockquote small,
+.dropdown-menu > li > a,
+address, .table th, .table td {
   line-height: 24px;
 }
