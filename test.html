@@ -103,8 +103,8 @@
       </div>
       <div class="span9">
         <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>Cum sociis natoque penatibus et magnis dis <a href="#">parturient montes</a>, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta <a href="#">gravida at eget</a> metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       </div>
     </section>
 
@@ -289,7 +289,7 @@
         <h3>Code</h3>
       </div>
       <div class="span9">
-        <p>This is an example of an inline <code>&lt;code&gt;</code> block.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <code>&lt;foobar&gt;</code> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <code>&lt;foobar&gt;</code> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <pre>{
   "id": 12,
   "name": "Example of a block-level code block",
@@ -313,13 +313,17 @@
           <p><span class="label label-info">Info</span></p>
           <p><span class="label label-inverse">Inverse</span></p>
         </div>
-        <div class="pull-left clearfix" style="margin-left: 40px;">
+        <div class="pull-left" style="margin-left: 40px;">
           <p><span class="badge">1</span></p>
           <p><span class="badge badge-success">2</span></p>
           <p><span class="badge badge-warning">4</span></p>
           <p><span class="badge badge-important">6</span></p>
           <p><span class="badge badge-info">8</span></p>
           <p><span class="badge badge-inverse">10</span></p>
+        </div>
+        <div class="pull-left" style="margin-left: 40px;">
+          <p style="clear:both"><span class="label label-info">Info</span> This is an example of an inline label!</p>
+          <button class="btn">View messages <span class="badge">14</span></button> &nbsp; <button class="btn" disabled="disabled">Delete user <span class="label">Staff-only</span></button>
         </div>
       </div>
     </section>

@@ -16,3 +16,131 @@ li, dd, dt, blockquote small,
 address, .table th, .table td {
   line-height: 24px;
 }
+
+p {
+  margin-bottom: 14px;
+}
+
+/* Fixes for other stuff because of font size change :-( */
+
+.navbar .nav .dropdown-toggle .caret {
+  margin-top: 10px;
+}
+
+/* Less plonky headings: this isn't a blog */
+
+h1 {
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+/* Less subtle horizontal rules; use .muted to revert back to default */
+
+hr {
+  border-top-color: #ddd;
+}
+
+hr.muted {
+  border-top-color: #eee;
+}
+
+/* More readable <code> elements */
+
+pre, code {
+  font-family: Consolas, Menlo, "DejaVu Sans Mono", Courier, "Courier New", monospace;
+}
+
+code {
+  margin: 0 0.1em;
+  padding: 3px 4px 1px 4px;
+  vertical-align: 1px;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  color: #555;
+}
+
+/* Slightly bigger, better vertically-aligned labels */
+
+.label, .badge {
+  font-size: 12px;
+  line-height: 15px;
+  vertical-align: 1px;
+}
+
+.btn .label, .btn .badge {
+  vertical-align: baseline;
+  font-size: 11px;
+  line-height: 14px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.btn .badge {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+/* Better spacing below headings inside alerts */
+
+.alert h4 {
+  margin: 0 0 5px 0;
+}
+
+/* Search input improvements */
+
+input.search-query,
+.navbar-search .search-query {
+  background-image: url(../img/scraperstrap-search.png);
+  background-position: 8px 6px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.navbar-search .search-query {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 2px;
+}
+
+.navbar-inverse .navbar-search .search-query {
+  -webkit-transition: background-color linear 0.2s;
+     -moz-transition: background-color linear 0.2s;
+       -o-transition: background-color linear 0.2s;
+          transition: background-color linear 0.2s;
+}
+
+.navbar-inverse .navbar-search .search-query:focus,
+.navbar-inverse .navbar-search .search-query.focused {
+  padding: 4px 14px 4px 30px;
+  background-color: #616161;
+  border: 1px solid #111;
+  color: white;
+  text-shadow: none;
+}
+
+/* Fix border bug with disabled tabs-below link */
+
+.tabs-below > .nav-tabs > li.disabled > a:hover,
+.tabs-below > .nav-tabs > li.disabled > a:focus {
+  border-bottom: 1px solid #eee;
+}
+
+/* Fix oddly-chosen .btn-large .caret position */
+
+.btn-large .caret {
+  margin-top: 8px;
+}
+
+/* Improve close button spacing on alerts */
+
+.alert .close {
+  top: -1px;
+}
+
+.alert-block .close {
+  top: -5px;
+}
