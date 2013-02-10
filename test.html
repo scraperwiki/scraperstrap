@@ -7,10 +7,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="vendor/css/bootstrap.css" rel="stylesheet">
+    <link href="css/scraperstrap.css" rel="stylesheet" id="scraperstrap-css">
     <style>
     .row { margin-bottom: 40px; }
     .span3 h3 { margin-top: 0; }
     .bs-docs-separator { margin: 40px 0 39px; }
+
+    #scraperstrap {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 20px;
+    }
+
+    #scraperstrap input {
+      margin: 0 0 2px 3px;
+    }
 
     .alerts .alert, .progress-bars .progress {
       margin-bottom: 20px;
@@ -55,6 +67,8 @@
   <body>
 
   <div class="container">
+
+    <label id="scraperstrap">ScraperStrap <input type="checkbox" checked></label>
 
     <h3 style="margin-top: 40px;" class="muted">Bootstrap sample sheet</h3>
 
@@ -1988,5 +2002,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
+    <script>
+    $('#scraperstrap input').on('change', function(){
+      if(this.checked) {
+        $('<link>').attr({"rel": "stylesheet", "type": "text/css", "href": "css/scraperstrap.css", "id":"scraperstrap-css"}).appendTo('head')
+      } else {
+        $('#scraperstrap-css').remove()
+      }
+    })
+    </script>
   </body>
 </html>
