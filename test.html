@@ -12,6 +12,20 @@
     .span3 h3 { margin-top: 0; }
     .bs-docs-separator { margin: 40px 0 39px; }
 
+    .alerts .alert, .progress-bars .progress {
+      margin-bottom: 20px;
+    }
+
+    section.dropdowns .span9 > .pull-left {
+      margin-right: 20px;
+    }
+    section.dropdowns .dropdown > .dropdown-menu,
+    section.dropdowns .dropup > .dropdown-menu {
+      display: block;
+      position: static;
+      margin-bottom: 5px;
+    }
+
     .the-icons {
       margin-left: 0;
       list-style: none;
@@ -33,17 +47,6 @@
     }
     section.inverse .the-icons {
       margin-top: 5px;
-    }
-
-    section.dropdowns .span9 > .pull-left {
-      margin-right: 20px;
-    }
-
-    section.dropdowns .dropdown > .dropdown-menu,
-    section.dropdowns .dropup > .dropdown-menu {
-      display: block;
-      position: static;
-      margin-bottom: 5px;
     }
     </style>
     <!--[if lt IE 9]><script src="vendor/js/html5shiv.js"></script><![endif]-->
@@ -68,6 +71,15 @@
         <h4>h4. Heading 4</h4>
         <h5>h5. Heading 5</h5>
         <h6>h6. Heading 6</h6>
+        <div class="page-header">
+          <h1>Example page header <small>Subtext for header</small></h1>
+        </div>
+        <div class="page-header">
+          <h2>Example page header <small>Subtext for header</small></h2>
+        </div>
+        <div class="page-header">
+          <h3>Example page header <small>Subtext for header</small></h3>
+        </div>
       </div>
     </section>
 
@@ -269,6 +281,76 @@
   "name": "Example of a block-level code block",
   "description": "Block level code blocks are created with &lt;pre&gt; tags and can span multiple lines. White space inside of &lt;pre&gt; elements is displayed, so make sure there aren't extra spaces or line-breaks at the start and end of lines."
 }</pre>
+      </div>
+    </section>
+
+    <hr class="bs-docs-separator">
+
+    <section class="row">
+      <div class="span3">
+        <h3>Labels &amp; badges</h3>
+      </div>
+      <div class="span9">
+        <div class="pull-left">
+          <p><span class="label">Default</span></p>
+          <p><span class="label label-success">Success</span></p>
+          <p><span class="label label-warning">Warning</span></p>
+          <p><span class="label label-important">Important</span></p>
+          <p><span class="label label-info">Info</span></p>
+          <p><span class="label label-inverse">Inverse</span></p>
+        </div>
+        <div class="pull-left clearfix" style="margin-left: 40px;">
+          <p><span class="badge">1</span></p>
+          <p><span class="badge badge-success">2</span></p>
+          <p><span class="badge badge-warning">4</span></p>
+          <p><span class="badge badge-important">6</span></p>
+          <p><span class="badge badge-info">8</span></p>
+          <p><span class="badge badge-inverse">10</span></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="bs-docs-separator">
+
+    <section class="row alerts">
+      <div class="span3">
+        <h3>Alerts</h3>
+      </div>
+      <div class="span9">
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        </div>
+        <div class="alert alert-block">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <h4>Warning!</h4>
+          <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        </div>
+        <div class="alert alert-error">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+        <div class="alert alert-success">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>Well done!</strong> You successfully read this important alert message.
+        </div>
+        <div class="alert alert-info">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div>
+      </div>
+    </section>
+
+    <hr class="bs-docs-separator">
+
+    <section class="row">
+      <div class="span3">
+        <h3>Wells</h3>
+      </div>
+      <div class="span9">
+        <div class="well well-small">Well with minimal padding.</div>
+        <div class="well">Well with default padding.</div>
+        <div class="well well-large">Well with extra padding.</div>
       </div>
     </section>
 
@@ -1539,21 +1621,49 @@
       </div>
     </section>
 
-    <section class="row">
+    <section class="row progress-bars">
       <div class="span3">
-
+        <h3>Progress bars</h3>
       </div>
       <div class="span9">
-
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="span3">
-
-      </div>
-      <div class="span9">
-
+        <div class="progress">
+          <div class="bar" style="width: 16.66%"></div>
+        </div>
+        <div class="progress progress-info">
+          <div class="bar" style="width: 33.33%"></div>
+        </div>
+        <div class="progress progress-success">
+          <div class="bar" style="width: 50%"></div>
+        </div>
+        <div class="progress progress-warning">
+          <div class="bar" style="width: 66.66%"></div>
+        </div>
+        <div class="progress progress-danger" style="margin-bottom: 40px;">
+          <div class="bar" style="width: 83.33%"></div>
+        </div>
+        <div class="progress progress-striped">
+          <div class="bar" style="width: 16.66%"></div>
+        </div>
+        <div class="progress progress-striped progress-info">
+          <div class="bar" style="width: 33.33%"></div>
+        </div>
+        <div class="progress progress-striped progress-success">
+          <div class="bar" style="width: 50%"></div>
+        </div>
+        <div class="progress progress-striped progress-warning">
+          <div class="bar" style="width: 66.66%"></div>
+        </div>
+        <div class="progress progress-striped progress-danger" style="margin-bottom: 40px;">
+          <div class="bar" style="width: 83.33%"></div>
+        </div>
+        <div class="progress progress-striped active" style="margin-bottom: 40px;">
+          <div class="bar" style="width: 45%"></div>
+        </div>
+        <div class="progress">
+          <div class="bar bar-success" style="width: 35%"></div>
+          <div class="bar bar-warning" style="width: 20%"></div>
+          <div class="bar bar-danger" style="width: 10%"></div>
+        </div>
       </div>
     </section>
 
