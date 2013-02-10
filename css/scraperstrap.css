@@ -104,6 +104,7 @@ code {
 /* Search input improvements */
 
 input.search-query,
+input[type="search"],
 .navbar-search .search-query {
   background-image: url(../img/scraperstrap-search.png);
   background-position: 8px 6px;
@@ -269,7 +270,8 @@ input[type="color"],
           border-radius: 0 14px 14px 0;
 }
 
-input.search-query {
+input.search-query,
+input[type="search"] {
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
           border-radius: 15px;
