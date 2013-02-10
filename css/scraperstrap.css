@@ -422,3 +422,27 @@ input.search-query {
      -moz-border-radius: 30px;
           border-radius: 30px;
 }
+
+/* Shorter transitions to make the site feel snappier */
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  -webkit-transition: border linear 0.05s, box-shadow linear 0.05s;
+     -moz-transition: border linear 0.05s, box-shadow linear 0.05s;
+       -o-transition: border linear 0.05s, box-shadow linear 0.05s;
+          transition: border linear 0.05s, box-shadow linear 0.05s;
+}
