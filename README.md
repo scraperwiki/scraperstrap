@@ -1,4 +1,4 @@
-# Scraperstrap
+# Scraperstrap
 
 A tidy little Bootstrap theme.
 
