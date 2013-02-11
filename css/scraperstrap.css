@@ -528,3 +528,45 @@ input[type="color"],
   background-position: 9px 4px;
   background-position: 8px 2px\9; /* override for IE6-8 which don't support background-size */
 }
+
+/* Responsive sizing for .containers */
+
+.container {
+    overflow: auto;
+    margin-bottom: 20px;
+    width: 320px;
+    -moz-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+/* IE7/8 don't support @media queries. 4% of ScraperWiki's visitors
+   in 2012 used IE7/8. 97% of them had a screen width of 1024px or more,
+   so we're going to feed them all the 920px style. */
+
+.container {
+   width: 920px\9;
+}
+
+.navbar .container {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 620px) {
+    .container {
+        width: 620px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .container {
+        width: 920px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    .container {
+        width: 1220px;
+    }
+}
