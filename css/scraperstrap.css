@@ -506,3 +506,20 @@ input[type="color"],
   background-color: transparent;
   background-image: url(../img/loader-btn-link.gif);
 }
+
+.btn-large.loading {
+  padding-left: 38px;
+  background-position: 12px 13px;
+}
+
+.btn-small.loading {
+  background-size: 14px;
+  background-position: 9px 5px;
+  background-position: 8px 4px\9; /* override for IE6-8 which don't support background-size */
+}
+
+.btn-mini.loading {
+  background-size: 12px;
+  background-position: 9px 4px;
+  background-position: 8px 2px\9; /* override for IE6-8 which don't support background-size */
+}
