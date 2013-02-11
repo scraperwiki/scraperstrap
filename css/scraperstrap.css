@@ -35,6 +35,11 @@ p {
   margin: 5px 1px;
 }
 
+/* I have no idea why this works. The default 10px isn't enough */
+.dropdown-submenu.pull-left > .dropdown-menu {
+  margin-left: 24px;
+}
+
 /* Less plonky headings: this isn't a blog */
 
 h1 {
