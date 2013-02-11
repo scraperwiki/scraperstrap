@@ -13,14 +13,20 @@
     .span3 h3 { margin-top: 0; }
     .bs-docs-separator { margin: 40px 0 39px; }
 
-    #scraperstrap {
+    #scraperstrap,
+    #responsive {
       position: fixed;
-      top: 0;
+      top: 10px;
       right: 0;
-      padding: 20px;
+      padding: 10px 20px;
     }
 
-    #scraperstrap input {
+    #responsive {
+      top: 50px;
+    }
+
+    #scraperstrap input,
+    #responsive input {
       margin: 0 0 2px 3px;
     }
 
@@ -52,12 +58,11 @@
       background-color: rgba(255,0,0,.25);
     }
 
-    section.inverse {
+    .icons-container {
       background-color: #666;
       color: #fff;
-      border-radius: 5px;
     }
-    section.inverse .the-icons {
+    .icons-container .the-icons {
       margin-top: 5px;
     }
     </style>
@@ -66,9 +71,11 @@
 
   <body>
 
-  <div class="container">
+  <label id="scraperstrap">ScraperStrap <input type="checkbox" checked></label>
 
-    <label id="scraperstrap">ScraperStrap <input type="checkbox" checked></label>
+  <label id="responsive">Bootstrap-responsive <input type="checkbox"></label>
+
+  <div class="container">
 
     <h3 style="margin-top: 40px;" class="muted">Bootstrap sample sheet</h3>
 
@@ -1859,7 +1866,12 @@
       </div>
     </section>
 
-    <section class="row inverse">
+  </div>
+
+  <div class="icons-container">
+  <div class="container">
+
+    <section class="row">
       <div class="span3">
         <h3>White icons</h3>
       </div>
@@ -2013,14 +2025,8 @@
       </div>
     </section>
 
-    <section class="row">
-      <div class="span3">
-
-      </div>
-      <div class="span9">
-
-      </div>
-    </section>
+  </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
@@ -2030,6 +2036,13 @@
         $('<link>').attr({"rel": "stylesheet", "type": "text/css", "href": "css/scraperstrap.css", "id":"scraperstrap-css"}).appendTo('head')
       } else {
         $('#scraperstrap-css').remove()
+      }
+    })
+    $('#responsive input').on('change', function(){
+      if(this.checked) {
+        $('<link>').attr({"rel": "stylesheet", "type": "text/css", "href": "vendor/css/bootstrap-responsive.css", "id":"responsive-css"}).appendTo('head')
+      } else {
+        $('#responsive-css').remove()
       }
     })
     </script>
